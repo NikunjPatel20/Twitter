@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Your Timeline</h1>
+    <ul class="list-group">
+        {% for tweet in timeline %}
+            <li class="list-group-item">{{ tweet.text }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

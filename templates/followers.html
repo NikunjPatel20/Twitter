@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Your Followers</h1>
+    <ul class="list-group">
+        {% for follower in followers %}
+            <li class="list-group-item">{{ follower.screen_name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

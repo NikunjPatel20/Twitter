@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Following</h1>
+    <ul class="list-group">
+        {% for friend in friends %}
+            <li class="list-group-item">{{ friend.screen_name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
